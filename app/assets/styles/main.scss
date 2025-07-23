@@ -1,0 +1,7 @@
+@use './variables';
+@use 'base/resets';
+
+body {
+    background: var(--color-primary);
+    color: white;
+}
