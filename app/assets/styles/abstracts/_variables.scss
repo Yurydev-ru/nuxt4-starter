@@ -1,0 +1,45 @@
+// // ====== BREAKPOINTS ======
+// $breakpoints: (
+//   'xs': 0,
+//   'sm': 576px,
+//   'md': 768px,
+//   'lg': 992px,
+//   'xl': 1200px,
+//   'xxl': 1400px
+// );
+
+// // ====== SPACING SYSTEM ======
+// $spacing-base: 1rem !default;
+// $spacing-scale: (
+//   '0': 0,
+//   '1': $spacing-base * 0.25,
+//   '2': $spacing-base * 0.5,
+//   '3': $spacing-base,
+//   '4': $spacing-base * 1.5,
+//   '5': $spacing-base * 3,
+//   'auto': auto
+// );
+
+// // ====== TRANSITIONS ======
+// $transition-durations: (
+//   'fast': 0.15s,
+//   'normal': 0.3s,
+//   'slow': 0.5s
+// );
+
+// $transition-timing: (
+//   'ease-in-out': cubic-bezier(0.4, 0, 0.2, 1),
+//   'ease-out': cubic-bezier(0, 0, 0.2, 1),
+//   'ease-in': cubic-bezier(0.4, 0, 1, 1)
+// );
+
+// // ====== Z-INDEX ======
+// $z-layers: (
+//   'auto': auto,
+//   'base': 1,
+//   'dropdown': 10,
+//   'sticky': 100,
+//   'modal': 1000,
+//   'toast': 1100,
+//   'tooltip': 1200
+// );

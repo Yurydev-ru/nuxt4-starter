@@ -1,0 +1,203 @@
+// // // ====== RESPONSIVE BREAKPOINTS ======
+// // @mixin media($breakpoint) {
+// //   @if map-has-key($breakpoints, $breakpoint) {
+// //     $value: map-get($breakpoints, $breakpoint);
+    
+// //     @if $value == 0 {
+// //       @content;
+// //     } @else {
+// //       @media (min-width: $value) {
+// //         @content;
+// //       }
+// //     }
+// //   } @else {
+// //     @error "Breakpoint '#{$breakpoint}' not found in $breakpoints map";
+// //   }
+// // }
+
+// // // ====== ASPECT RATIO ======
+// // @mixin aspect-ratio($width, $height) {
+// //   position: relative;
+  
+// //   &::before {
+// //     content: '';
+// //     display: block;
+// //     padding-top: ($height / $width) * 100%;
+// //     width: 100%;
+// //   }
+  
+// //   > * {
+// //     height: 100%;
+// //     left: 0;
+// //     position: absolute;
+// //     top: 0;
+// //     width: 100%;
+// //   }
+// // }
+
+// // // ====== SYSTEM TRANSITIONS ======
+// // @mixin transition($properties: all, $duration: normal, $easing: ease-in-out) {
+// //   $transition: ();
+  
+// //   @each $property in $properties {
+// //     $transition: append(
+// //       $transition, 
+// //       #{$property} 
+// //       map-get($transition-durations, $duration) 
+// //       map-get($transition-timing, $easing), 
+// //       comma
+// //     );
+// //   }
+  
+// //   transition: $transition;
+// // }
+
+// // // ====== SR-ONLY HELPER ======
+// // @mixin sr-only {
+// //   border: 0 !important;
+// //   clip: rect(1px, 1px, 1px, 1px) !important;
+// //   clip-path: inset(50%) !important;
+// //   height: 1px !important;
+// //   margin: -1px !important;
+// //   overflow: hidden !important;
+// //   padding: 0 !important;
+// //   position: absolute !important;
+// //   white-space: nowrap !important;
+// //   width: 1px !important;
+// // }
+
+// // // ====== THEMABLE COMPONENT ======
+// // @mixin component-theme($property, $key, $important: false) {
+// //   @if $important {
+// //     #{$property}: var(--#{$key}) !important;
+// //   } @else {
+// //     #{$property}: var(--#{$key});
+// //   }
+// // }
+
+// // **Responsive Breakpoints** — облегчает работу с адаптивными точками останова:
+
+//    @mixin breakpoint($point) {
+//      @if $point == small {
+//        @media (max-width: 600px) { @content; }
+//      } @else if $point == medium {
+//        @media (max-width: 900px) { @content; }
+//      } @else if $point == large {
+//        @media (max-width: 1200px) { @content; }
+//      }
+//    }
+   
+// // **Центрирование элементов** — быстрый способ центрирования блоков:
+
+//    @mixin center {
+//      display: flex;
+//      align-items: center;
+//      justify-content: center;
+//    }
+
+// // **Оттенки цветов** — создание цветовых вариаций:
+//    @mixin shade($color, $percentage) {
+//      background-color: mix(black, $color, $percentage);
+//    }
+
+// // **Текстовый обрез (ellipsis)** — для длинных текстов:
+//    @mixin ellipsis {
+//      overflow: hidden;
+//      white-space: nowrap;
+//      text-overflow: ellipsis;
+//    }
+
+//    @mixin pseudo($content: '') {
+//      content: $content;
+//      position: absolute;
+//    }
+
+//    @mixin gradient($start, $end) {
+//      background: linear-gradient(to right, $start, $end);
+//    }
+
+//    @mixin hover {
+//      &:hover {
+//        @content;
+//      }
+//    }
+//    @mixin animation($name, $duration, $timing: ease, $iteration: infinite) {
+//      animation: $name $duration $timing $iteration;
+//    }
+
+   
+//    @mixin size($width, $height: $width) {
+//      width: $width;
+//      height: $height;
+//    }
+
+//     @mixin hidden {
+//       opacity: 0;
+//       visibility: hidden;
+//       pointer-events: none;
+//     }
+
+
+// // Тень для блока — задает кастомную тень
+// @mixin box-shadow($x: 0px, $y: 4px, $blur: 10px, $spread: 0px, $color: rgba(0, 0, 0, 0.2)) {
+//   box-shadow: $x $y $blur $spread $color;
+// }
+
+
+// @mixin position($position, $top: auto, $right: auto, $bottom: auto, $left: auto) {
+//   position: $position;
+//   top: $top;
+//   right: $right;
+//   bottom: $bottom;
+//   left: $left;
+// }
+
+// // Гибкость флексов — удобное создание флекс-контейнера:
+// @mixin flex($direction: row, $justify: flex-start, $align: stretch) {
+//   display: flex;
+//   flex-direction: $direction;
+//   justify-content: $justify;
+//   align-items: $align;
+// }
+
+// // Трансформация — добавляет стили transform:
+// @mixin transform($transforms...) {
+//   transform: $transforms;
+// }
+
+// // Закругленные углы — упрощает работу с border-radius:
+// @mixin rounded($radius: 10px) {
+//   border-radius: $radius;
+// }
+
+// // Сетка (Grid) — ускоряет работу с CSS Grid:
+// @mixin grid($columns: repeat(auto-fit, minmax(100px, 1fr)), $gap: 20px) {
+//   display: grid;
+//   grid-template-columns: $columns;
+//   gap: $gap;
+// }
+
+// // Перемещение в центр экрана — идеальный для модальных окон:
+// @mixin absolute-center {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+// }
+
+// // Полупрозрачный фон — для создания элегантного слоя поверх контента:
+// @mixin overlay($color: rgba(0, 0, 0, 0.5)) {
+//   background-color: $color;
+// }
+
+// // Гармоничное масштабирование шрифтов — автоматический расчет размеров текста:
+// @mixin fluid-text($min-size, $max-size) {
+//   font-size: calc(#{$min-size} + (#{$max-size} - #{$min-size}) * ((100vw - 320px) / (1280 - 320)));
+// }
+
+// // Сглаживание шрифтов — для красивого рендеринга текста:
+// @mixin smooth-font {
+//   text-rendering: optimizeLegibility;
+//   -webkit-font-smoothing: antialiased;
+//   -moz-osx-font-smoothing: grayscale;
+// }

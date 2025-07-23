@@ -1,0 +1,27 @@
+html {
+  background-color: var(--bg-Color_lightBlue);
+  color: var(--color-PrimaryBlackMedium);
+  font-size: 16px;
+  // line-height: var(--line-height-base);
+  line-height: 1.5;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-size-adjust: 100%;
+}
+
+body {
+  background-color: var(--bg-Color_lightBlue);
+  color: var(--color-PrimaryBlackMedium);
+  min-height: 100vh;
+  // transition:
+  //   background-color var(--transition-duration) var(--transition-timing),
+  //   color var(--transition-duration) var(--transition-timing);
+  
+  // Accessibility support
+  // &.using-keyboard {
+  //   :focus-visible {
+  //     outline: var(--outline-width) var(--outline-style) var(--color-focus);
+  //     outline-offset: 2px;
+  //   }
+  // }
+}

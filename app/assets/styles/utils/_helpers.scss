@@ -1,0 +1,70 @@
+// // FILE: assets/styles/utils/_helpers.scss
+// /**
+// * UTILITY CLASSES
+// * Reusable helper classes
+// */
+
+// // ====== LAYOUT ======
+// .container {
+//   margin-inline: auto;
+//   max-width: 90rem;
+//   padding-inline: var(--spacing-4);
+//   width: 100%;
+  
+//   @include media('lg') {
+//     padding-inline: var(--spacing-6);
+//   }
+// }
+
+// .grid {
+//   display: grid;
+//   gap: var(--spacing-5);
+//   grid-template-columns: repeat(auto-fill, minmax(min(100%, 20rem), 1fr));
+// }
+
+// // ====== SPACING ======
+// @each $size, $value in $spacing-scale {
+//   .p-#{$size} { padding: $value; }
+//   .pt-#{$size} { padding-top: $value; }
+//   .pb-#{$size} { padding-bottom: $value; }
+//   .pl-#{$size} { padding-left: $value; }
+//   .pr-#{$size} { padding-right: $value; }
+//   .px-#{$size} { padding-inline: $value; }
+//   .py-#{$size} { padding-block: $value; }
+  
+//   .m-#{$size} { margin: $value; }
+//   .mt-#{$size} { margin-top: $value; }
+//   .mb-#{$size} { margin-bottom: $value; }
+//   .ml-#{$size} { margin-left: $value; }
+//   .mr-#{$size} { margin-right: $value; }
+//   .mx-#{$size} { margin-inline: $value; }
+//   .my-#{$size} { margin-block: $value; }
+// }
+
+// // ====== TYPOGRAPHY ======
+// .text-center { text-align: center; }
+// .text-uppercase { text-transform: uppercase; }
+// .font-bold { font-weight: 700; }
+// .font-mono { font-family: var(--font-family-mono); }
+
+// @each $size, $value in $font-sizes {
+//   .text-#{$size} {
+//     font-size: $value;
+//   }
+// }
+
+// // ====== VISIBILITY ======
+// .sr-only {
+//   @include sr-only;
+// }
+
+// .hidden {
+//   display: none !important;
+// }
+
+// // ====== THEMING ======
+// .theme-transition * {
+//   transition:
+//     background-color var(--transition-duration) var(--transition-timing),
+//     border-color var(--transition-duration) var(--transition-timing);
+// }

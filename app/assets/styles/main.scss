@@ -1,7 +1,3 @@
-@use './variables';
-@use 'base/resets';
-
-body {
-    background: var(--color-primary);
-    color: white;
-}
+@use './base/resets';
+@use './base/root';
+@use 'themes/light' as *;

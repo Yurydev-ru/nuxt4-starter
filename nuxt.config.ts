@@ -1,9 +1,5 @@
-// nuxt.config.ts
-
-export default defineNuxtConfig ({
-  devtools: { enabled: true },
-  compatibilityDate: '2025-07-15',
-  modules: ['@nuxt/devtools', '@pinia/nuxt'],
+export default defineNuxtConfig ({ 
+  modules: ['@nuxt/devtools', '@pinia/nuxt', '@nuxtjs/color-mode'],
   css: ['~/assets/styles/main.scss'],
   components: [
     {
@@ -15,15 +11,19 @@ export default defineNuxtConfig ({
     strict: true,
     typeCheck: true,
   },
+  devtools: { enabled: true },
   vite: {
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: `
-            @use '~/assets/styles/variables' as *;
-            ;`
+          additionalData: 
+          `
+            @use '~/assets/styles/base/resets' as *;
+            @use '~/assets/styles/base/root' as *;
+          `,
         },
       },
     },
-  }
+  },
+  compatibilityDate: '2024-12-05'
 })
