@@ -1,18 +1,18 @@
 html {
-  background-color: var(--bg-Color_lightBlue);
-  color: var(--color-PrimaryBlackMedium);
+  // Устанавливаем цвет фона по умолчанию. Он будет переопределен темой.
+  background-color: var(--bg-colorPrimary);
+  color: var(--text-colorPrimary);
   font-size: 16px;
-  // line-height: var(--line-height-base);
   line-height: 1.5;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  text-size-adjust: 100%;
 }
 
 body {
-  background-color: var(--bg-Color_lightBlue);
-  color: var(--color-PrimaryBlackMedium);
+  background-color: var(--bg-colorPrimary);
+  color: var(--text-colorPrimary);
   min-height: 100vh;
+
   // transition:
   //   background-color var(--transition-duration) var(--transition-timing),
   //   color var(--transition-duration) var(--transition-timing);

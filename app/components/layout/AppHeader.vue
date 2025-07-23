@@ -7,5 +7,7 @@
 </template>
 
 <style lang="scss" scoped>
-    
+    .app-header {
+        background-color: var(--color-success);
+    }    
 </style>

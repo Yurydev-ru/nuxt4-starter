@@ -1,5 +1,10 @@
 export default defineNuxtConfig ({ 
-  modules: ['@nuxt/devtools', '@pinia/nuxt', '@nuxtjs/color-mode'],
+  modules: [
+    '@nuxt/devtools',
+    '@pinia/nuxt',
+    '@nuxtjs/color-mode',
+    '@nuxt/fonts'
+  ],
   css: ['~/assets/styles/main.scss'],
   components: [
     {
@@ -18,8 +23,8 @@ export default defineNuxtConfig ({
         scss: {
           additionalData: 
           `
-            @use '~/assets/styles/base/resets' as *;
-            @use '~/assets/styles/base/root' as *;
+            @use '~/assets/styles/themes/light' as *;
+            @use '~/assets/styles/themes/dark' as *;
           `,
         },
       },

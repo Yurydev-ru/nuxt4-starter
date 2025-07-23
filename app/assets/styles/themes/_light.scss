@@ -1,46 +1,42 @@
-// FILE: assets/styles/themes/_light.scss
-/**
-* LIGHT THEME IMPLEMENTATION
-*/
-
 :root {
   --angle: 45deg;
   // Core colors
-  --bg-Color_lightBlue: linear-gradient(var(--angle), hsl(218 16.2% 73.3%), hsl(240 2.63% 85.1%), hsl(206 30.4% 95.5%), hsl(none 0% 98%));
-  --bg-Color_foreground: hsl(0, 0%, 75%);
-  --surface-Color_black:hsl(210, 70%, 4%);
-  
-  // Primary palette
-  --color-primaryBlackBold: hsla(0, 4%, 11%, 0.941);
-  --color-primaryBlackMedium: hsla(0, 2%, 11%, 0.932);
-  --color-primaryBlackRegular: hsla(0, 4%, 14%, 0.941);
-  --color-primaryBlackLight: hsla(0, 3%, 18%, 0.941);
-  
-  // Secondary palette
-  --colorSecondaryLight: hsl(204, 45%, 98%);
-  --colorSecondaryRegular: hsl(210, 40%, 96%);
-  --colorSecondarySemi: hsl(215, 16%, 47%);
-  --colorSecondaryBold: hsl(215, 19%, 35%);
-  
-  // Semantic colors
-  --color-SuccessLightGreen: hsl(138, 87%, 69%);
-  --color-WarningCerise: hsl(60, 87%, 51%);
-  --color-ErrorTomato: hsl(6, 100%, 60%);
-  --color-InfoTiffany: hsl(171, 72%, 77%);
-  
-  // // State colors
-  // --color-hover: rgba(0, 0, 0, 0.05);
-  // --color-active: rgba(0, 0, 0, 0.1);
-  
-  // // Borders
-  // --color-border: #e2e8f0;
-  
-  // Component tokens
-  // --button-bg: var(--color-primary-500);
-  // --button-text: #ffffff;
-  // --button-hover-bg: var(--color-primary-600);
-  // --input-border: var(--color-border);
+  --bg-colorPrimary: linear-gradient(var(--angle), hsl(218 16.2% 73.3%), hsl(240 2.63% 85.1%), hsl(206 30.4% 95.5%), hsl(none 0% 98%));
+  --bg-colorSurface:hsl(210, 70%, 4%);
+  --color-textPrimary: hsl(210, 70%, 4%);
+  --color-textSecondary: hsl(215, 19%, 15%);
+  --color-textTertiary: hsl(215, 16%, 47%);
 
+  // Color state
+  --color-hover: hsla(0, 0%, 0%, 0.05);
+  --color-active: hsla(0, 0%, 0%, 0.1);
+  --color-focus: rgba(59, 130, 246, 0.5);
+  --color-focusRing: hsl(210, 70%, 4%);
+
+
+  // Component tokens
+  --color-border: hsl(215, 19%, 25%);
+  --color-shadow: rgba(0, 0, 0, 0.1);
   // Gradients
   // --gradient-bottom: linear-gradient(180deg, hsl(6, 100%, 60%), hsl(323, 74%, 58%), hsl(171, 72%, 77%), hsl(255, 98%, 49%), hsl(210, 70%, 4%), hsl(138, 87%, 69%), hsl(0, 13%, 9%));
 }
+
+// [data-theme="light"] {
+//   --color-background: initial;         // Фон всей страницы
+//   --color-surface: initial;            // Фон для компонентов (карточки, шапка)
+//   --color-text-primary: initial;       // Основной текст
+//   --color-text-secondary: initial;     // Вторичный текст
+//   --color-accent: initial;             // Акцентный цвет (ссылки, кнопки)
+//   --color-border: initial;             // Цвет рамок
+
+//   --color-success: initial;
+//   --color-warning: initial;
+//   --color-error: initial;
+//   --color-info: initial;
+
+//    --radius-sm: 4px;
+//   --radius-md: 8px;
+//   --radius-lg: 16px;
+//   --radius-full: 9999px;
+// }
+

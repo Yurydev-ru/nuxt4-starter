@@ -1,0 +1,20 @@
+@use '../abstracts/variables' as *;
+
+[data-theme="dark"] {
+  --angle: 45deg;
+  --bg-colorPrimary: linear-gradient(var(--angle), hsl(217, 31%, 18%), hsl(240 2.63% 85.1%), hsl(205, 27%, 24%), hsl(0, 12%, 21%));
+  --bg-colorSurface: hsl(210, 3%, 49%);
+  --color-textPrimary:: hsl(204 45% 98%);
+  --color-textSecondary: hsl(216, 22%, 71%);
+  --color-textTertiary: hsl(215, 16%, 47%);
+  
+  // Color state
+  --color-hover: hsla(0, 0%, 0%, 0.05);
+  --color-active: hsla(0, 0%, 0%, 0.1);
+  --color-focus: rgba(59, 130, 246, 0.5);
+  --color-focusRing: hsl(210, 70%, 4%);
+
+  // Component tokens
+  --color-border: hsl(215, 19%, 25%);
+  --color-shadow: rgba(0, 0, 0, 0.1);
+}

@@ -1,20 +1,17 @@
-// // FILE: assets/styles/utils/_helpers.scss
-// /**
-// * UTILITY CLASSES
-// * Reusable helper classes
-// */
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
 
-// // ====== LAYOUT ======
-// .container {
-//   margin-inline: auto;
-//   max-width: 90rem;
-//   padding-inline: var(--spacing-4);
-//   width: 100%;
-  
-//   @include media('lg') {
-//     padding-inline: var(--spacing-6);
-//   }
-// }
+// Ensure $spacing-scale and $font-sizes are defined in ../abstracts/variables
+// Example fallback (remove if already defined in variables):
+// $spacing-scale: (1: 0.25rem, 2: 0.5rem, 3: 1rem, 4: 1.5rem, 5: 2rem, 6: 3rem);
+// $font-sizes: (sm: 0.875rem, base: 1rem, lg: 1.25rem, xl: 1.5rem);
+
+// ====== LAYOUT ======
+.container {
+  margin-inline: auto;
+  max-width: 96rem;
+  width: 100%;
+}
 
 // .grid {
 //   display: grid;

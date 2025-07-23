@@ -3,15 +3,15 @@
 </script>
 
 <template>
-    <header class="app-footer">
+    <footer class="app-footer">
         <h1>
             Hello World
         </h1>
-    </header>
+    </footer>
 </template>
 
 <style lang="scss" scoped>
     .app-footer {
-        background-color: red;
+        background-color: var(--color-success);
     }
 </style>
