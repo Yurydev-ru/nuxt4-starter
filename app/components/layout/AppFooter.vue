@@ -4,9 +4,11 @@
 
 <template>
     <footer class="app-footer">
-        <h1>
+        <div class="container">
+            <h1>
             Hello World
         </h1>
+        </div>    
     </footer>
 </template>
 

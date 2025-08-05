@@ -35,25 +35,8 @@ $font-sizes: (
     --color-error: hsl(6, 100%, 60%);
     --color-info: hsl(171, 72%, 77%);
     --color-accent: hsl(210, 40%, 96%);
-    // --color-accentText: hsl(210, 70%, 4%);
 }
 
-
-// // ====== TRANSITIONS ======
-// $transition-durations: (
-//   'fast': 0.15s,
-//   'normal': 0.3s,
-//   'slow': 0.5s
-// );
-
-// $transition-timing: (
-//   'ease-in-out': cubic-bezier(0.4, 0, 0.2, 1),
-//   'ease-out': cubic-bezier(0, 0, 0.2, 1),
-//   'ease-in': cubic-bezier(0.4, 0, 1, 1)
-// );
-
-
-// ====== Z-INDEX ======
 $z-layers: (
   'auto': auto,
   'base': 1,
@@ -62,4 +45,12 @@ $z-layers: (
   'modal': 1000,
   'toast': 1100,
   'tooltip': 1200
+);
+
+$point: (
+  'mob': 320px,
+  'small': 660px,
+  'medium': 960px,
+  'large': 1260px,
+  'xlarge': 1440px
 );

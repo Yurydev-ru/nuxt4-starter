@@ -1,5 +1,5 @@
-@use '../abstracts/variables' as *;
 @use '../abstracts/mixins' as *;
+@use '../abstracts/variables' as *;
 
 // Ensure $spacing-scale and $font-sizes are defined in ../abstracts/variables
 // Example fallback (remove if already defined in variables):
@@ -7,9 +7,15 @@
 // $font-sizes: (sm: 0.875rem, base: 1rem, lg: 1.25rem, xl: 1.5rem);
 
 // ====== LAYOUT ======
+
+
 .container {
+  @include breakpoint('mob');
+  @include breakpoint('small');
+  @include breakpoint('medium');
+  @include breakpoint('large');
+  @include breakpoint('xlarge');
   margin-inline: auto;
-  max-width: 96rem;
   width: 100%;
 }
 

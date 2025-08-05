@@ -1,4 +1,4 @@
-@use 'variables' as *;
+@use '../abstracts/variables' as *;
 
 // @mixin media($breakpoint) {
 //   @if map-has-key($breakpoints, $breakpoint) {
@@ -104,18 +104,39 @@
 // // //   }
 // // // }
 
-// // // **Responsive Breakpoints** — облегчает работу с адаптивными точками останова:
+//Responsive Breakpoints
 
-// //    @mixin breakpoint($point) {
-// //      @if $point == small {
-// //        @media (max-width: 600px) { @content; }
-// //      } @else if $point == medium {
-// //        @media (max-width: 900px) { @content; }
-// //      } @else if $point == large {
-// //        @media (max-width: 1200px) { @content; }
-// //      }
-// //    }
-   
+@mixin breakpoint($point) {
+    @if $point == 'mob' {
+        @media (min-width: 280px) { 
+            max-width: calc(100% - 1rem);
+        }
+    }
+  @else if $point == 'small' {
+      @media (min-width: 660px) { 
+          max-width: calc(100% - 2rem);
+      }
+  }
+  @else if $point == 'medium' {
+      @media (min-width: 960px) { 
+          max-width: calc(100% - 3rem);
+      }
+  }
+  @else if $point == 'large' {
+      @media (min-width: 1260px) { 
+          max-width: calc(100% - 16rem);
+      }
+  }
+  @else if $point == 'xlarge' {
+      @media (min-width: 1440px) { 
+          max-width: calc(100% - 16rem);
+      }
+  }
+  @else {
+      @warn "Unknown breakpoint: #{$point}. Available: mob, small, medium, large, xlarge.";
+  }
+}
+
 // // // **Центрирование элементов** — быстрый способ центрирования блоков:
 
 // //    @mixin center {
